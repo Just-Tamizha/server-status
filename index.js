@@ -5,7 +5,7 @@ require('dotenv').config();
 
 
 function logToFile(message) {
-    fs.appendFile('logs.txt', message + '\n', (err) => {
+    fs.appendFile('logs.txt', `${new Date().toLocaleDateString()}-${new Date().toLocaleTimeString()} : `+message + '\n', (err) => {
         if (err) {
             console.error('Error writing to file:', err);
         }
