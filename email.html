@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Status Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Server Status Notification</h1>
+        </div>
+        <div class="content">
+            <p>Dear <i>Tamizha</i>,</p>
+            <p>We are pleased to inform you that the server is now <strong>UP</strong>.</p>
+            <p><strong>System :</strong> {{system_name}}</p>
+            <p><strong>Time :</strong> {{server_up_time}}</p>
+            <p>Thank you for your attention.</p>
+            <p>Best regards,</p>
+            <p><i>Server</i></p>
+        </div>
+    </div>
+</body>
+</html>
